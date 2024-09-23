@@ -4,3 +4,6 @@
 
 let wallet = JSON.parse(localStorage.getItem("amount"));
 console.log(wallet);
+
+let amountShow = document.getElementById("wallet");
+amountShow.innerHTML = wallet;

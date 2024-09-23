@@ -6,7 +6,6 @@ let searchMovie = document.getElementById("search");
 
 let walletAmount = JSON.parse(localStorage.getItem("amount"));
 console.log(walletAmount);
-localStorage.setItem(JSON.localStorage("amount",walletAmount));
 
 let wallet = document.getElementById("wallet");
 wallet.innerHTML = walletAmount;
@@ -15,7 +14,6 @@ let moviesDisplay = document.getElementById("movies");
 
 
 let key = 52098758
-// let api = "http://www.omdbapi.com/?i=tt3896198&apikey=b45a8f04"
 let api = `http://www.omdbapi.com/?apikey=${key}&s=movies&page=10`
 
 apiData();
